@@ -1,0 +1,106 @@
+.home_container {
+  background-image: url(../../assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  position: relative;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1.5rem;
+  /* margin-top: 2.8rem; */
+}
+.info_container > h3 {
+  opacity: 0.6;
+  color: gray;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+.info_container > h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #FFFFFF;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0.8rem auto 2rem auto;
+}
+.info_container > p {
+  font-weight: 400;
+  color: gray;
+  opacity: 0.6;
+  line-height: 25px;
+  max-width: 460px;
+  margin-inline: auto;
+}
+.button_container button {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  /* max-width: 50%; */
+  margin-inline: auto;
+  /* margin-top: 2rem; */
+  padding: 2rem;
+  color: black;
+  /* font-weight: 300; */
+  /* font-size: 2rem; */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 576px) {
+  .home_container {
+    background-image: url(../../assets/home/background-home-tablet.jpg);
+  }
+  .text_container {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home_container {
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+  }
+  .main_container {
+    flex-direction: row;
+    align-items: baseline;
+    padding: 3rem;
+    margin-top: 5rem;
+  }
+  .info_container {
+    width: 70%;
+    text-align: left;
+  }
+  .info_container p {
+    margin-inline: 0;
+  }
+  .button_container {
+    width: 30%;
+    align-items: flex-end;
+  }
+  .button_container button {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .main_container {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  .info_container h3 {
+    font-size: 1.5rem;
+  }
+  .info_container h1 {
+    font-size: 8rem;
+  }
+  .info_container p {
+    font-size: 1.1rem;
+  }
+  .button_container button {
+    font-size: 3rem;
+  }
+}

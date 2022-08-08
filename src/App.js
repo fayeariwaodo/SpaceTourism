@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./components/landing-page/landing-page";
+import Destinations from "./components/destination-page/destinations";
+import CrewPage from "./components/crew-page/crew-page";
+import Technologies from "./components/technology-page/technologies";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+       <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage></LandingPage>}></Route>
+        <Route
+          path="/destinations"
+          element={<Destinations></Destinations>}
+        ></Route>
+        <Route path="/crew" element={<CrewPage></CrewPage>}></Route>
+        <Route
+          path="/technology"
+          element={<Technologies></Technologies>}
+        ></Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
