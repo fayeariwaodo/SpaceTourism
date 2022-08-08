@@ -44,8 +44,6 @@
   /* margin-top: 2rem; */
   padding: 2rem;
   color: black;
-  /* font-weight: 300; */
-  /* font-size: 2rem; */
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
@@ -67,19 +65,22 @@
   .main_container {
     flex-direction: row;
     align-items: baseline;
-    padding: 3rem;
+    padding: 5rem;
     margin-top: 5rem;
   }
   .info_container {
     width: 70%;
     text-align: left;
+    /* margin-bottom: 10rem; */
   }
   .info_container p {
     margin-inline: 0;
   }
   .button_container {
     width: 30%;
-    align-items: flex-end;
+    align-self: flex-end;
+    margin-bottom: 6rem;
+    margin-left: 2rem;
   }
   .button_container button {
     max-width: 100%;
