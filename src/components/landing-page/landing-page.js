@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import NavigationBar from "../navigation-bar/navigation-bar";
 
+
 const HomePage = () => {
   return (
     <section className={`text-center text-white ${styles.home_container}`}>
@@ -17,9 +18,9 @@ const HomePage = () => {
             world experience!
           </p>
         </div>
-        <div className={styles.button_container }>
+        <div className={styles.button_container } >
           <Link to="/destinations">
-            <button >Explore</button>
+            <button>Explore</button>
           </Link>
         </div>
       </div>
